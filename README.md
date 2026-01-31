@@ -273,14 +273,7 @@ The app includes full Bangla (Bengali) language support for PDF generation:
 - Print functionality
 - A4 size formatting
 
-**Usage:**
-```dart
-BanglaPdfGenerator().generateAndSavePDF(
-  title: 'বিক্রয় চালান',
-  data: saleData,
-  fileName: 'invoice_bn.pdf'
-);
-```
+
 
 ---
 
@@ -302,53 +295,8 @@ All models support serialization:
 
 ---
 
-## 🧪 Testing
-
-### Widget Tests
-```bash
-flutter test
-```
-
-### Integration Tests
-```bash
-flutter test integration_test/
-```
-
-### Test Files Location
-- Unit tests: `test/`
-- Integration tests: `integration_test/`
-
----
 
 
-
-
-## 🤝 Contributing
-
-### Code Style
-- Follow Dart style guide
-- Use meaningful variable names
-- Add comments for complex logic
-- Keep methods small and focused
-
-### Naming Conventions
-- Classes: `PascalCase`
-- Variables/Methods: `camelCase`
-- Constants: `CONSTANT_CASE`
-- Files: `snake_case.dart`
-
-### Git Workflow
-1. Create a feature branch: `git checkout -b feature/feature-name`
-2. Commit changes: `git commit -m "Add feature"`
-3. Push to branch: `git push origin feature/feature-name`
-4. Create a Pull Request
-
-### Code Review
-- All PRs require review
-- Tests must pass
-- Code style must comply with guidelines
-
----
 
 ## 🔒 Security
 
