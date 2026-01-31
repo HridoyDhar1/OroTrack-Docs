@@ -27,7 +27,7 @@ A comprehensive Flutter-based application for managing gold shop operations, inv
 
 ## 🎯 Overview
 
-**Goold** is a sophisticated gold shop management and e-commerce application designed to streamline operations, inventory tracking, and customer transactions. The platform provides end-to-end solutions for gold retailers including sales management, mortgage tracking, employee management, and comprehensive financial reporting.
+**OroTrack** is a sophisticated gold shop management and e-commerce application designed to streamline operations, inventory tracking, and customer transactions. The platform provides end-to-end solutions for gold retailers including sales management, mortgage tracking, employee management, and comprehensive financial reporting.
 
 **Project Name:** goldshop  
 **Version:** 1.0.0  
