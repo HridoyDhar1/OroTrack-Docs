@@ -1,5 +1,7 @@
 # Goold - Gold Shop Management & E-Commerce Platform
 
+<img width="1472" height="939" alt="Screenshot 2026-01-31 at 6 19 07 PM" src="https://github.com/user-attachments/assets/32cc6f41-3ef4-446e-8b9d-da1cc276bb0c" />
+
 A comprehensive Flutter-based application for managing gold shop operations, inventory, and e-commerce transactions. Built with Firebase backend and real-time notifications.
 
 ## 📋 Table of Contents
@@ -204,105 +206,7 @@ Goold-main/
 
 ---
 
-## 🚀 Getting Started
 
-### Prerequisites
-- Flutter SDK (3.7.0 or higher)
-- Dart SDK
-- Xcode (for iOS development)
-- Android Studio (for Android development)
-- Firebase CLI
-- Node.js (for Cloud Functions)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/goold.git
-   cd goold
-   ```
-
-2. **Install Flutter dependencies**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Get packages**
-   ```bash
-   flutter pub get
-   ```
-
-4. **Configure Firebase**
-   ```bash
-   flutterfire configure
-   ```
-   This will set up `firebase_options.dart` with your Firebase project credentials.
-
-5. **Install Cloud Functions dependencies**
-   ```bash
-   cd functions
-   npm install
-   cd ..
-   ```
-
-6. **Run the app**
-   ```bash
-   flutter run
-   ```
-
-### Development Environment Setup
-
-**Android:**
-```bash
-flutter run -d <android-device-id>
-```
-
-**iOS:**
-```bash
-flutter run -d <ios-device-id>
-```
-
-**Web:**
-```bash
-flutter run -d chrome
-```
-
----
-
-## ⚙️ Configuration
-
-### Firebase Configuration
-1. Create a Firebase project at [firebase.google.com](https://firebase.google.com)
-2. Enable the following services:
-   - Authentication (Email, Google, Facebook)
-   - Cloud Firestore
-   - Firebase Storage
-   - Cloud Messaging
-   - Remote Config
-   - App Check
-
-3. Run `flutterfire configure` to generate `firebase_options.dart`
-
-### Google Maps Setup
-
-**Android:**
-1. Get Google Maps API key
-2. Add to `android/app/src/main/AndroidManifest.xml`:
-   ```xml
-   <meta-data
-       android:name="com.google.android.geo.API_KEY"
-       android:value="YOUR_API_KEY"/>
-   ```
-
-**iOS:**
-1. Add API key to `ios/Runner/GoogleService-Info.plist`
-
-### AdMob Setup
-1. Create AdMob account
-2. Get App ID and Ad Unit IDs
-3. Update in app configuration
-
----
 
 ## 🎨 Key Features & Modules
 
@@ -352,66 +256,8 @@ flutter run -d chrome
 
 ---
 
-## 📱 Firebase Setup
 
-### Cloud Firestore Collections
 
-Key collections in Firestore:
-
-- **users** - User profiles and data
-- **products** - Product inventory
-- **sales** - Sales transactions
-- **mortgages** - Mortgage records
-- **employees** - Employee information
-- **notifications** - Notification logs
-- **payments** - Payment records
-
-### Security Rules
-Configure Firestore security rules to control access:
-```javascript
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write: if request.auth != null;
-    }
-  }
-}
-```
-
-### Firebase Authentication
-- Enable Email/Password authentication
-- Configure Google OAuth credentials
-- Set up Facebook app configuration
-
----
-
-## 🔔 Push Notifications
-
-### FCM Integration
-1. Notification Service (`feature/Notifications/data/service/`)
-   - `notification_service.dart` - Main notification handler
-   - `fcm_notification_service.dart` - FCM integration
-   - `admin_notification.dart` - Admin notifications
-
-2. Features:
-   - Real-time push notifications
-   - Local notifications
-   - Notification routing
-   - Deep linking support
-
-### Configuration
-1. Enable Cloud Messaging in Firebase Console
-2. Configure notification channels for Android
-3. Set up FCM service account
-
-### Sending Notifications
-Notifications can be sent via:
-- Firebase Console
-- Cloud Functions
-- Admin SDK
-
----
 
 ## 📄 PDF Generation
 
@@ -474,58 +320,8 @@ flutter test integration_test/
 
 ---
 
-## 📦 Deployment
 
-### Android Deployment
-1. Build APK:
-   ```bash
-   flutter build apk --release
-   ```
 
-2. Build App Bundle (for Google Play):
-   ```bash
-   flutter build appbundle --release
-   ```
-
-3. Upload to Google Play Console
-
-### iOS Deployment
-1. Build iOS:
-   ```bash
-   flutter build ios --release
-   ```
-
-2. Open in Xcode:
-   ```bash
-   open ios/Runner.xcworkspace
-   ```
-
-3. Upload to App Store
-
-### Web Deployment
-```bash
-flutter build web --release
-```
-
-Deploy the `build/web/` directory to a hosting service.
-
----
-
-## 📚 Documentation
-
-Additional documentation files in the project:
-
-| Document | Purpose |
-|----------|---------|
-| `NOTIFICATION_ARCHITECTURE.md` | Notification system design |
-| `README_NOTIFICATIONS.md` | Notification setup guide |
-| `PUSH_NOTIFICATION_GUIDE.md` | Push notification implementation |
-| `OTP_VERIFICATION_GUIDE.md` | OTP authentication flow |
-| `FCM_QUICK_REFERENCE.md` | FCM quick reference |
-| `firebase.json` | Firebase configuration |
-| `analysis_options.yaml` | Linter configuration |
-
----
 
 ## 🤝 Contributing
 
@@ -563,70 +359,9 @@ Additional documentation files in the project:
 - HTTPS for all API calls
 - Environment-based configuration
 
-### Secrets Management
-- Firebase credentials in `firebase_options.dart` (auto-generated)
-- API keys in secure configuration
-- Never commit sensitive data
-
 ---
 
-## 📝 Environment Files
 
-### Firebase Configuration
-- `lib/firebase_options.dart` - Auto-generated by `flutterfire configure`
-- Contains platform-specific Firebase credentials
-
-### Build Configuration
-- `android/key.properties` - Android signing configuration
-- `android/gradle.properties` - Gradle settings
-- `ios/Podfile` - CocoaPods configuration
-
----
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Flutter pub get fails:**
-```bash
-flutter clean
-flutter pub get
-```
-
-**Build issues:**
-```bash
-flutter clean
-flutter pub cache repair
-flutter pub get
-flutter build (platform)
-```
-
-**Firebase connection issues:**
-- Verify Firebase credentials
-- Check internet connection
-- Restart app
-
-**Notification not working:**
-- Check FCM setup
-- Verify notification permissions
-- Check Firebase console
-
----
-
-## 📞 Support
-
-For issues, feature requests, or contributions:
-- Open an issue on GitHub
-- Contact the development team
-- Check existing documentation
-
----
-
-## 📄 License
-
-This project is proprietary. All rights reserved.
-
----
 
 ## 👥 Team
 
