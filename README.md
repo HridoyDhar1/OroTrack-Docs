@@ -1,8 +1,8 @@
-# Goold - Gold Shop Management & E-Commerce Platform
+# OroTrack - Jewellery Shop Management Software
 
 <img width="1472" height="939" alt="Screenshot 2026-01-31 at 6 19 07 PM" src="https://github.com/user-attachments/assets/32cc6f41-3ef4-446e-8b9d-da1cc276bb0c" />
 
-A comprehensive Flutter-based application for managing gold shop operations, inventory, and e-commerce transactions. Built with Firebase backend and real-time notifications.
+A comprehensive Flutter-based application for managing gold shop operations, inventory, and  transactions. Built with Firebase backend and real-time notifications.
 
 ## 📋 Table of Contents
 
