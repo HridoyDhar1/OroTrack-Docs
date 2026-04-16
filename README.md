@@ -1,5 +1,7 @@
 # OroTrack - Jewellery Shop Management Software
-
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=600&lines=Hi+I'm+Hridoy+Dhar;Flutter+Developer;QA+Engineer;AI+Enthusiast;Building+Real+World+Apps" />
+</p>
 <img width="1472" height="939" alt="Screenshot 2026-01-31 at 6 19 07 PM" src="https://github.com/user-attachments/assets/32cc6f41-3ef4-446e-8b9d-da1cc276bb0c" />
 
 A comprehensive Flutter-based application for managing gold shop operations, inventory, and  transactions. Built with Firebase backend and real-time notifications.
